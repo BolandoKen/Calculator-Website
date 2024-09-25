@@ -8,18 +8,17 @@ html{
     height: 100vh;
 }
 .calculator{
-    
     display: flex;
     align-items: center;
     justify-content: center;
-width: 1064px;
-height: 668px;
-left: calc(50% - 1064px/2 - 14px);
-top: 128px;
-background: linear-gradient(108.13deg, rgba(217, 217, 217, 0.1) 7.95%, rgba(255, 255, 255, 0.4) 87.36%);
-box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
-backdrop-filter: blur(20px);
-border-radius: 63px;
+    width: 1064px;
+    height: 668px;
+    left: calc(50% - 1064px/2 - 14px);
+    top: 128px;
+    background: linear-gradient(108.13deg, rgba(217, 217, 217, 0.1) 7.95%, rgba(255, 255, 255, 0.4) 87.36%);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 63px;
 }
 .calc{
     width: 350px;
@@ -62,7 +61,7 @@ border-radius: 63px;
 .output-div p{
     padding: 30px;
     font-size: 30px;
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
 }
 button{
     width: 60px;
@@ -71,7 +70,7 @@ button{
     border-radius: 100%;
     justify-content: center;
     align-items: center;
-    font-family: sans-serif;
+    font-family: "Inter", sans-serif;
     color: #222222;
     font-size: 25px;
     border: none;
@@ -88,4 +87,24 @@ button:active{
 }
 .numpad{
     background-color: #F5E6C5;
+}
+.text{
+    width: 350px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "Inter", sans-serif;
+    padding-left: 50px;
+    margin: 0;
+}
+#title{
+    font-size: 70px;
+    margin: 0;
+    font-weight: bold;
+}
+#discription{
+    font-size: 25px;
+    margin: 0;
 }
