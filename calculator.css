@@ -6,6 +6,26 @@ html{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative;
+}
+.big-circle{
+    border-radius: 100%;
+    position: absolute;
+    width: 657px;
+    height: 657px;
+    left: 706px;
+    top: -290px;
+    background: linear-gradient(218.3deg, #F5E6C5 6.4%, #F56E1F 88.78%);
+}
+.small-circle{
+    border-radius: 100%;
+    position: absolute;
+    width: 419px;
+    height: 419px;
+    left: 48px;
+    top: 631px;
+    background: linear-gradient(218.3deg, #F5E6C5 6.4%, #F56E1F 88.78%);
+
 }
 .calculator{
     display: flex;
