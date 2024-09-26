@@ -61,10 +61,7 @@ html{
     grid-template-columns: 80px 80px 80px 80px;
     font-family: sans-serif;
 }
-.output-div{
-    display: flex;
-    justify-content: right;
-    align-items: center;
+#display{
     background: #353333;
     border-radius: 20px;
     width: 92%;
@@ -76,12 +73,11 @@ html{
     color: white;
     box-sizing: border-box;
     font-weight: bold;
+    font-size: 25px;
+    border: none;
+    text-align: right;
+    padding: 10px;
 
-}
-.output-div p{
-    padding: 30px;
-    font-size: 30px;
-    font-family: "Inter", sans-serif;
 }
 button{
     width: 60px;

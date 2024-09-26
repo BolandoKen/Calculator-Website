@@ -14,27 +14,27 @@
             <div class="calculator">
                 <div class="calc">
             <div class="container">
-                <div id="outputDiv" class="output-div"><p>1</p></div>
-                <button id="item-2" class="top-row">AC</button>
-                <button id="item-3" class="top-row">N</button>
-                <button id="item-4" class="top-row">%</button>
-                <button id="item-5" class="side-column">/</button>
-                <button id="item-6" class="numpad">7</button>
-                <button id="item-7" class="numpad">8</button>
-                <button id="item-8" class="numpad">9</button>
-                <button id="item-9" class="side-column">X</button>
-                <button id="item-10" class="numpad">4</button>
-                <button id="item-11" class="numpad">5</button>
-                <button id="item-12" class="numpad">6</button>
-                <button id="item-13" class="side-column">-</button>
-                <button id="item-14" class="numpad">1</button>
-                <button id="item-15" class="numpad">2</button>
-                <button id="item-16" class="numpad">3</button>
-                <button id="item-17" class="side-column">+</button>
-                <button id="item-18" class="numpad">?</button>
-                <button id="item-19" class="numpad">0</button>
-                <button id="item-20" class="numpad">.</button>
-                <button id="item-21" class="side-column">=</button>
+                <input id="display" readonly>
+                <button onclick="clearDisplay()" class="top-row">AC</button>
+                <button onclick="appendToDisplay()" class="top-row">N</button>
+                <button onclick="appendToDisplay()" class="top-row">%</button>
+                <button onclick="appendToDisplay('/')" class="side-column">/</button>
+                <button onclick="appendToDisplay('7')" class="numpad">7</button>
+                <button onclick="appendToDisplay('8')" class="numpad">8</button>
+                <button onclick="appendToDisplay('9')" class="numpad">9</button>
+                <button onclick="appendToDisplay('x')" class="side-column">x</button>
+                <button onclick="appendToDisplay('4')" class="numpad">4</button>
+                <button onclick="appendToDisplay('5')" class="numpad">5</button>
+                <button onclick="appendToDisplay('6')" class="numpad">6</button>
+                <button onclick="appendToDisplay()" class="side-column">-</button>
+                <button onclick="appendToDisplay('1')" class="numpad">1</button>
+                <button onclick="appendToDisplay('2')" class="numpad">2</button>
+                <button onclick="appendToDisplay('3')" class="numpad">3</button>
+                <button onclick="appendToDisplay('+')" class="side-column">+</button>
+                <button onclick="appendToDisplay()" class="numpad">?</button>
+                <button onclick="appendToDisplay('0')" class="numpad">0</button>
+                <button onclick="appendToDisplay('.')" class="numpad">.</button>
+                <button onclick="calculate()" class="side-column">=</button>
             </div>
             </div>
             <div class="text">
@@ -43,4 +43,5 @@
             </div>
         </div>
     </body>
+    <script src="logic.js"></script>
 </html>
