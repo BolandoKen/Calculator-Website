@@ -11,4 +11,18 @@ function clearDisplay(){
 
 function calculate(){
 
+    try{
+        display.value = eval(display.value);
+    }
+    catch{
+        display.value = "Error";
+    }
+}
+function negativeValue(){
+    if(display.value != ""){
+        display.value = String(-parseFloat(display.value))
+    }
+}
+function clearLastEntry(){
+    display.value = display.value.slice(0,-1);
 }
